@@ -16,7 +16,7 @@ tzInfo = pytz.timezone('Asia/Hong_Kong')
 # Create a connection object.
 scope = ['https://spreadsheets.google.com/feeds',
          'https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('D:/BPS Tabanan/2023/Build Website/st2023-tabanan-ebaa52f9499e.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('st2023-tabanan-ebaa52f9499e.json', scope)
 client = gspread.authorize(creds)
 
 # Make sure you use the right name here.
