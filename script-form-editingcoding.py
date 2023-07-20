@@ -89,9 +89,16 @@ if __name__ == "__main__":
 
                     statusdokumen = st.selectbox('STATUS DOKUMEN', statusdok, 0)
 
-                    if ((nmpetugasselect != "PILIH NAMA PETUGAS") and len(jumlahL2) != 0 and (statusdokumen != "PILIH STATUS DOKUMEN")):
+                    lstPML = list(df2["Nama PML"].unique())
+                    lstPML.insert(0, "PILIH PML")
+
+                    namaPML = st.selectbox('NAMA PML', lstPML, 0)
+
+                    skor = st.text_input('Nilai PML untuk SLS/Sub SLS ini. Rentang 1-10')
+
+                    if ((nmpetugasselect != "PILIH NAMA PETUGAS") and len(jumlahL2) != 0 and (statusdokumen != "PILIH STATUS DOKUMEN") and (namaPML != "PILIH PML") and len(skor) != 0):
                         if st.button("Submit"):
                             st.success(f'Data berhasil tersubmit', icon="✅")
-                            worksheet1.append_row([datetime.datetime.now(tz=tzInfo).isoformat(), FirstFilter, SecondFilter, ThirdFilter, ThirdForthFilter, nmpetugasselect, int(jumlahL2), statusdokumen])
+                            worksheet1.append_row([datetime.datetime.now(tz=tzInfo).isoformat(), FirstFilter, SecondFilter, ThirdFilter, ThirdForthFilter, nmpetugasselect, int(jumlahL2), statusdokumen, namaPML, skor])
                             time.sleep(3)
                             streamlit_js_eval(js_expressions="parent.window.location.reload()")
