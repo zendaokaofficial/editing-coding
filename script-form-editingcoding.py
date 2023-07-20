@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
                     statusdokumen = st.selectbox('STATUS DOKUMEN', statusdok, 0)
 
-                    lstPML = list(df2["Nama PML"].unique())
+                    lstPML = list(df4["Nama PML"].unique())
                     lstPML.insert(0, "PILIH PML")
 
                     namaPML = st.selectbox('NAMA PML', lstPML, 0)
