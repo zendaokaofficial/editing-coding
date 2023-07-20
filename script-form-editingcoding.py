@@ -31,6 +31,11 @@ df = pd.read_csv(url_1, header=0, )
 df["ID SLS"] = df["ID SLS"].astype(str)
 hari = date.today()
 
+st.set_page_config(
+    page_title="Form Editing Coding",
+    page_icon="📋",
+    layout="wide",
+)
 if __name__ == "__main__":
     st.markdown("<h1 style='text-align: center; color: green;'>Isikan Form Editing Coding</h1>", unsafe_allow_html=True)
     st.subheader(f"Tanggal: {hari}")
