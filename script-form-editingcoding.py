@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
                 if ThirdForthFilter != "PILIH ID SLS":
 
-                    nmpetugas = ["PILIH NAMA PETUGAS", "I Gede Putu Sopyan Adina Putra",
+                    nmpetugas = ["PILIH NAMA PETUGAS", "I Gede Putu Sopyan Adinata Putra",
                                  "Luh Ade Resi Puspitasari",
                                  "Ni Putu Eka Arini",
                                  "Ni Komang Ayu Rimayani",
@@ -82,7 +82,7 @@ if __name__ == "__main__":
                                  "Ni Luh Putu Sintia Dewi",
                                  "Ni Kadek Chita Dwi Chayani",
                                  "I Made Yuda Prana Cita",
-                                 "Ni Nyoman Mona Purwaningtias",
+                                 "Ni Wayan Mona Purwaningtias",
                                  "Ni Luh Putu Ayu Sri Wulandari",
                                  "I Gusti Ayu Made Desi Dwi Yanti"]
                     
