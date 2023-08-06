@@ -84,7 +84,12 @@ if __name__ == "__main__":
                                  "I Made Yuda Prana Cita",
                                  "Ni Wayan Mona Purwaningtias",
                                  "Ni Luh Putu Ayu Sri Wulandari",
-                                 "I Gusti Ayu Made Desi Dwi Yanti"]
+                                 "I Gusti Ayu Made Desi Dwi Yanti",
+                                "I Nyoman Hary Krisna Mukti",
+                                "I Putu Yuda Mahendra",
+                                "I PUTU WIRYA NEGARA PUTRA",
+                                "Pande Nyoman Liana Cantika Finarti",
+                                "I Made Surya Adnyana Putra"]
                     
                     statusdok = ["PILIH STATUS DOKUMEN", "Selesai Editing Coding", "Dikembalikan ke Koseka"]
                     
